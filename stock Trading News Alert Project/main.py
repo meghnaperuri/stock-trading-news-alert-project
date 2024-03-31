@@ -17,7 +17,7 @@ def translate_to_english(text):
     translated_text = translator.translate(text, dest='en')
     return translated_text.text
 def print_news():
-    API_KEY_NEWS="d44fe49439cd426b94f2e658fb45b805"
+    API_KEY_NEWS=""
     NEWS_ENDPOINT=f"https://newsapi.org/v2/everything?q=tesla&from=2024-02-20&sortBy=publishedAt&apiKey={API_KEY_NEWS}"
     news=requests.get(NEWS_ENDPOINT)
     news_data=[]
@@ -31,7 +31,7 @@ def print_news():
 
 def stock_calculator():
     try:
-        API_KEY_STOCK="RH44AQUWFAXISJK5"
+        API_KEY_STOCK=""
         url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSLA&apikey={API_KEY_STOCK}"
         r = requests.get(url)
         r.raise_for_status()
