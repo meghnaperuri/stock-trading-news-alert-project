@@ -4,8 +4,8 @@ import smtplib
 from googletrans import Translator, LANGUAGES
 
 
-my_email="meghnaperuri222@gmail.com"
-password="awjqsxdrmduedxus"
+my_email=""
+password=""
 
 x=dt.datetime.now()
 day=x.day
